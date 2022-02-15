@@ -61,6 +61,11 @@ flutter:
   assets:
      - assets/images/bam.png
      - assets/images/dialog_box.png
+     - assets/images/yura.png
+     - assets/images/artem.png
+     - assets/images/street.jpg
+     - assets/images/gidro.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

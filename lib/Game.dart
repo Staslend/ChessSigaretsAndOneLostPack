@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'TextBox.dart' as storybox;
+import 'TextBox.dart';
+import 'sprites.dart';
+import 'background.dart';
 
 class Game extends StatefulWidget {
   const Game({Key? key}) : super(key: key);
@@ -15,20 +17,13 @@ class _GameState extends State<Game> {
   Widget build(BuildContext context) {
     return Material(
         child: Container(
-
-            //Background
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/bam.png"),
-                    fit: BoxFit.cover)),
-
-
-            //Sprites and text
             child: Stack(
               children: [
+                Background(),
+                Sprites(),
                 Align(
                   alignment: Alignment.bottomCenter,
-                  child: storybox.TextBox(),
+                  child: TextBox(),
                 )
               ],
             )
